@@ -2,33 +2,43 @@
 #include "Stack.h"
 using namespace std;
 
+void menu(){
+	cout << "\nStack Linked-List"<< endl;
+	cout << "1. Push\n2. Pop\n3. Display\n4. Quit";	
+}
+
 int main() {
 	Stack s;
-	int choice;
-	do {
-		cout << "\n---------------------------------------------------------" << endl;
-		cout << "Stack Linked list:" << endl;
-		cout << "\n1. PUSH\n2. POP\n3. DISPLAY\n4. EXIT\n";
-		cout << "Enter your choice:";
-		cin >> choice;
-		switch (choice) {
-		case 1:
-			s.push();
-			break;
-		case 2:
-			s.pop();
-			break;
-		case 3:
-			s.display();
-			break;
-		case 4:
-			exit(0);
-			break;
-		default:
-			cout << "Invalid Choice";
-			break;
+	char choice;
+	menu();
+	
+	while(true){
+    	do{					
+	        cout<<"\n\nMasukkan salah satu pilihan di atas: ";
+	        cin>>choice;
+	        if(choice=='1'){	        	
+				s.push();
+				system("cls");
+				menu();
+			}else if(choice=='2'){				
+				system("cls");
+				menu();
+				s.pop();				
+			}else if(choice=='3'){
+				system("cls");
+				menu();				
+				s.display();				
+			}else if(choice=='4'){
+				exit(0);
+			}else{
+				system("cls");
+				menu();
+				cout<<endl<<endl<<"Maaf, pilihan tidak tersedia!"<<endl<<endl;
+			}
 		}
-	}
-	while (choice);
+		while(
+				(choice!='1')&&(choice!='2')&&(choice!='3')&&(choice!='4')
+		);    
+	}			
 	return 0;
 }
