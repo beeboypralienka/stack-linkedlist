@@ -3,7 +3,6 @@
 *.lo
 *.o
 *.obj
-*.dev
 *.layout
 *.win
 
