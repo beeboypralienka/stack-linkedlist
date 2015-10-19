@@ -2,6 +2,9 @@
 #include "Stack.h"
 using namespace std;
 
+/* Fachrul Pralienka Bani Muhamad */
+/*           5115201044           */
+
 void menu(){
 	cout << "\nStack Linked-List"<< endl;
 	cout << "1. Push\n2. Pop\n3. Display\n4. Quit";	

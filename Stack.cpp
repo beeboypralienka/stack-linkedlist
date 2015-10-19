@@ -3,6 +3,9 @@
 #include "Stack.h"
 using namespace std;
 
+/* Fachrul Pralienka Bani Muhamad */
+/*           5115201044           */
+
 Stack::Stack() {
 	top = NULL;
 }
